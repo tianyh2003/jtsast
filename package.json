@@ -1,0 +1,22 @@
+{
+  "name": "jtsast",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "jtsast",
+    "jtsast": "node main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bin": {
+    "jtsast": "main.js"
+  },
+  "dependencies": {
+    "commander": "^2.20.3", 
+    "@nodesecure/js-x-ray": "^7.0.0",
+    "@nodesecure/i18n": "^4.0.0"
+  }
+}
