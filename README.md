@@ -7,7 +7,7 @@ node 18.20.2
 ## 安装
 
 ```
-npm install
+npm install 
 npm link
 ```
 
