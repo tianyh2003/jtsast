@@ -27,6 +27,6 @@ console.log('# input file address : ' + inAddr);
 console.log('# output file address : ' + outAddr);
 
 if(program.opts().dmp) {
-  detecting_malicious_patterns(inAddr + "test1.js", outAddr + "conslusion.txt")
+  detecting_malicious_patterns(inAddr + "test1.js", outAddr + "conclusion.txt")
 }
   
