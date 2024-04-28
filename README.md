@@ -1,13 +1,13 @@
 # jtsast
 
 ## 环境
-ubuntu 22.04
+ubuntu 22.04  
 node 18.20.2
 
 ## 安装
 
 ```
-npm install 
+npm install  
 npm link
 ```
 
