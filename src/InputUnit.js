@@ -1,4 +1,6 @@
 import * as fs from "fs";
+import { tranEtsToJs } from "./tranEtsToJs.js"; 
+
 class InputUnit { 
     in_addr; 
     out_addr; 
@@ -11,6 +13,10 @@ class InputUnit {
         } 
         console.log('# input file address : ' + this.in_addr);
         console.log('# output file address : ' + this.out_addr);
+    }
+
+    init() {
+        tranEtsToJs(this.in_addr); 
     }
 }
 
