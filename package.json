@@ -15,8 +15,10 @@
     "jtsast": "main.js"
   },
   "dependencies": {
-    "commander": "^2.20.3", 
+    "@cs-au-dk/jelly": "^0.9.0",
+    "@nodesecure/i18n": "^4.0.0",
     "@nodesecure/js-x-ray": "^7.0.0",
-    "@nodesecure/i18n": "^4.0.0"
+    "commander": "^2.20.3",
+    "winston": "^3.13.0"
   }
 }

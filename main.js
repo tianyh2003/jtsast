@@ -11,9 +11,10 @@ const program = new Command();
 
 program
   .version('1.0.0')
-  .option('--in [inAddr]', 'input file address', "./in/test1/")
+  .option('--in [inAddr]', 'input file address', "./in/")
   .option('--out [outAddr]', 'output file address', "./out/")
   .option('--dmp', "detecting_malicious_patterns")
+  .option("--callgraph-html <file>", "save call graph as HTML file")
   .parse(process.argv);
 
 export const input_unit = new InputUnit(program.in, program.out); 
@@ -23,8 +24,9 @@ export const process_unit = new ProcessUnit();
 if(program.opts().dmp) {
   process_unit.dmp_process = true; 
 }
+if(program.opts().callgraphHtml) {
+  process_unit.callgraph_html = true; 
+}
 
 input_unit.init(); 
-console.log("# finish init"); 
 process_unit.deal(); 
-console.log("# finish deal"); 
