@@ -14,7 +14,8 @@ program
   .option('--in [inAddr]', 'input file address', "./in/")
   .option('--out [outAddr]', 'output file address', "./out/")
   .option('--dmp', "detecting_malicious_patterns")
-  .option("--callgraph-html <file>", "save call graph as HTML file")
+  .option("--callgraph-html", "save call graph as HTML file")
+  .option("--dataflow-html", "save data-flow graph as HTML file")
   .parse(process.argv);
 
 export const input_unit = new InputUnit(program.in, program.out); 
@@ -26,6 +27,9 @@ if(program.opts().dmp) {
 }
 if(program.opts().callgraphHtml) {
   process_unit.callgraph_html = true; 
+}
+if(program.opts().dataflowHtml) {
+  process_unit.dataflow_html = true; 
 }
 
 input_unit.init(); 
