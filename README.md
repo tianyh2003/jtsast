@@ -1,17 +1,24 @@
 # jtsast
 
-## 环境
+仓库地址：[tyh4567/jtsast (github.com)](https://github.com/tyh4567/jtsast/)
+
+## 推荐使用环境
+
 ubuntu 22.04  
 node 18.20.2
 
-## 安装
+## 快速开始
+
+### 安装
 
 ```
+git clone https://github.com/tyh4567/jtsast
+cd jtsast
 npm install  
 npm link
 ```
 
-## 验证
+### 验证
 
 ```
 jtsast
@@ -25,12 +32,3 @@ jtsast
 # output file address : ./out/
 ```
 
-## 功能
-
-1. 调用js-x-ray进行安全检测
-
-   ```
-   jtcast --dmp
-   ```
-
-   

@@ -4,6 +4,8 @@ import { tranEtsToJs } from "./tranEtsToJs.js";
 class InputUnit { 
     in_addr; 
     out_addr; 
+    ets_to_ts = true; 
+    ets_to_js = false; 
     constructor(_in_addr, _out_addr) {
         this.in_addr = _in_addr; 
         this.out_addr = _out_addr; 
