@@ -1,7 +1,5 @@
 # jtsast
 
-仓库地址：[tyh4567/jtsast (github.com)](https://github.com/tyh4567/jtsast/)
-
 ## 推荐使用环境
 
 ubuntu 22.04  
@@ -12,7 +10,7 @@ node 18.20.2
 ### 安装
 
 ```
-git clone https://github.com/tyh4567/jtsast
+git clone https://github.com/tianyh2003/jtsast
 cd jtsast
 npm install  
 npm link
